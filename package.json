@@ -1,0 +1,11 @@
+{
+    "name": "shiftpixy-recommendation-engine",
+    "description": "",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {},
+    "devDependencies": {
+        "serverless-offline": "^4.7.1",
+        "serverless-python-requirements": "^4.1.0"
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "status": 200,
+    "message": "Success",
+    "data": [
+      {
+        "shifterid" : "11e7873ddea55f59bccd0242ac110003",
+        "existingshifterjpid" : "",
+        "rating" : 5,
+        "location" : [
+                -111.7917716,
+                33.2351666
+        ],
+        "shifteravailability" : [
+                {
+                        "day" : 4,
+                        "starttime" : "00:44:00",
+                        "endtime" : "00:44:00",
+                        "minimumsalary" : 5
+                },
+                {
+                        "day" : 5,
+                        "starttime" : "00:44:00",
+                        "endtime" : "00:44:00",
+                        "minimumsalary" : 5
+                },
+                {
+                        "day" : 2,
+                        "starttime" : "00:44:00",
+                        "endtime" : "00:44:00",
+                        "minimumsalary" : 5
+                },
+                {
+                        "day" : 1,
+                        "starttime" : "00:44:00",
+                        "endtime" : "00:44:00",
+                        "minimumsalary" : 5
+                },
+                {
+                        "day" : 3,
+                        "starttime" : "00:44:00",
+                        "endtime" : "00:44:00",
+                        "minimumsalary" : 5
+                }
+        ],
+        "confirmedshifthours": [
+            {
+                "starttime": "2019-01-14T10:59:22",
+                "endtime": "2019-01-14T10:59:22"
+            },
+            {
+                "starttime": "2019-01-14T12:59:22",
+                "endtime": "2019-01-14T14:59:22"
+            }
+        ],
+        "vacatedshiftposition": [
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          }
+        ],
+        "invitedcount": 3,
+        "acceptedcount": 2,
+        "noshowcount": 1,
+        "recomendationcount": 4
+      }
+    ]
+}

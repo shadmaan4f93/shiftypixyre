@@ -1,0 +1,62 @@
+service: recommendation-engine-dal
+package:
+  exclude:
+    - node_modules/**
+    - .git
+    - README.md
+    - .vscode/**
+    - .editorconfig
+    - .gitignore
+    - .gitlab-ci.yml
+    - package.json
+    - package-lock.json
+    - .python-version
+    - tests/**
+    - requirements.txt
+    - requirements-dev.txt
+    - .pytest_cache/**
+frameworkVersion: ">=1.0.0 <2.0.0"
+
+custom:
+  defaultStage: dev
+  currentStage: ${opt:stage, self:custom.defaultStage}
+  pythonRequirements:
+    pythonBin: python
+  environment:
+    MONGO_HOST: ${env:MONGO_HOST, 'mongoHost'}
+    MONGO_USERNAME: ${env:MONGO_USERNAME, 'root'}
+    MONGO_PASSWORD: ${env:MONGO_PASSWORD, 'password'}
+    MONGO_AUTH_SOURCE: ${env:MONGO_AUTH_SOURCE, 'admin'}
+    MONGO_DB_NAME: ${env:MONGO_DB_NAME, 'recommendation_engine'}
+    DAL_URL: ${env:DAL_URL, 'dalurl'}
+    TOKEN: ${env:TOKEN, 'token'}
+
+provider:
+  name: aws
+  runtime: python3.7
+  stage: ${self:custom.currentStage}
+  profile: ${env:AWS_PROFILE, 'shiftpixy-dev'}
+  region: ${env:AWS_REGION, 'us-west-2'}
+  timeout: 30
+  role: ${file(./config.${self:custom.currentStage}.yml):ROLE}
+  vpc: ${file(./config.${self:custom.currentStage}.yml):VPC}
+
+functions:
+  dal_handler:
+    handler: handler.dal_handler
+    environment: ${self:custom.environment}
+    events:
+      - http:
+          path: dal
+          method: post
+  re_handler:
+    handler: handler.re_handler
+    environment: ${self:custom.environment}
+    events:
+      - http:
+          path: re
+          method: post
+plugins:
+  - serverless-python-requirements
+  - serverless-offline
+

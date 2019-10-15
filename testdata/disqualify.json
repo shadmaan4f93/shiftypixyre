@@ -1,0 +1,70 @@
+{
+    "shift_overlap":{
+        "input":{
+            "disqualify_params": true,
+            "shifter_hour_list": [1, 2, 3],
+            "vacated_hour_list": [4, 5, 6]
+        },
+        "expected": "qualified"
+    },
+    "day_overtime_risk":{
+        "input":{
+            "disqualify_params": {
+                "day_overtime_range":8
+            },
+            "shifter_day_hour": 4,
+            "vacated_hour": 3
+            },
+            "expected": "qualified"
+    },
+    "week_overtime_risk":{
+        "input":{
+            "disqualify_params": {
+                "week_overtime_range":40
+            },
+            "shifter_week_hour": 24,
+            "vacated_hour": 3
+            },
+            "expected": "qualified"
+    },
+    "duration_difference": {
+        "input":{
+            "duration_difference_range": 1,
+            "duration_difference_list": [8, 3]
+            },
+            "expected": "qualified"
+    },
+    "flexibility_filter":{
+        "input":{
+            "invited_range": 5,
+            "accepted_range": 0,
+            "invitedcount": 4,
+            "acceptedcount": 0
+        },
+        "expected": "qualified"
+    },
+    "recommended_filter": {
+        "input": {
+            "recommendedcount": 3,
+            "invitedcount": 2,
+            "recommended_range": 5,
+            "invited_range": 0
+        },
+        "expected": "qualified"
+    },
+    "reliability_filter":{
+        "input":{
+            "noshowcount":2,
+            "noshow_range":3
+        },
+        "expected": "qualified"
+    },
+    "position_filter":{
+        "input":{
+            "completed_position_count":2,
+            "completed_position_range":0
+        },
+        "expected": "qualified"
+    }
+}
+

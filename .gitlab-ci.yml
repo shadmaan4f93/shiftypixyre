@@ -1,0 +1,62 @@
+stages:
+  - test
+  - deploy
+
+services:
+    - mongo:4.0.4-xenial
+
+variables:
+    MONGO_INITDB_ROOT_USERNAME: root
+    MONGO_INITDB_ROOT_PASSWORD: test
+
+test:
+  image: python:3.7.1-alpine3.8
+  stage: test
+  script:
+    - apk --update add make bash
+    - pip install -r requirements.txt
+    - pip install -r requirements-dev.txt
+    - export MONGO_HOST=$TEST_MONGO_HOST
+    - export MONGO_USERNAME=$TEST_MONGO_USERNAME
+    - export MONGO_PASSWORD=$TEST_MONGO_PASSWORD
+    - export MONGO_PORT=$TEST_MONGO_PORT
+    - make test
+  tags:
+    - docker
+
+lint:
+  image: python:3.7.1-alpine3.8
+  stage: test
+  script:
+    - apk --update add make bash
+    - pip install -r requirements.txt
+    - pip install -r requirements-dev.txt
+    - make lint
+  tags:
+    - docker
+
+dev_aws:
+  image: python:3.7.1-alpine3.8
+  stage: deploy
+  script:
+    - mkdir -p ~/.aws/
+    - export AWS_DEFAULT_REGION=us-west-2
+    - echo -e "[profile shiftpixy-dev]\nregion = us-west-2\noutput = json\n" > ~/.aws/config
+    - echo -e "[shiftpixy-dev]\naws_access_key_id = $AWS_ACCESS_KEY_ID_SHIFTPIXY_DEV\naws_secret_access_key = $AWS_SECRET_ACCESS_KEY_SHIFTPIXY_DEV" > ~/.aws/credentials
+    - apk add --update nodejs npm build-base libffi-dev openssl-dev
+    - npm install -g serverless
+    - npm install
+    - export MONGO_HOST=$DEV_MONGO_HOST
+    - export MONGO_USERNAME=$DEV_MONGO_USERNAME
+    - export MONGO_PASSWORD=$DEV_MONGO_PASSWORD
+    - export DAL_URL=$DEV_DAL_URL
+    - export AWS_PROFILE=shiftpixy-dev
+    - serverless deploy --stage=dev
+    - serverless info --stage=dev
+  environment:
+    name: $CI_COMMIT_REF_SLUG
+  only:
+    - dev
+  tags:
+    - docker
+

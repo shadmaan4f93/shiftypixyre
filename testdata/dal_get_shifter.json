@@ -1,0 +1,65 @@
+{
+    "status": 200,
+    "message": "Success",
+    "data": [{
+        "id": "11e8fe12d5b546b7a6e10242ac110003",
+        "existingshifterjpid": "11e792557ca3145a9eb40242ac110002",
+        "longitude": "0",
+        "latitude": "0",
+        "rating": 5,
+        "position": [{
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "old position"
+        }, {
+            "title": "old position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }, {
+            "title": "New position"
+        }],
+        "shifteravailability": [{
+            "day": null,
+            "starttime": null,
+            "endtime": null,
+            "minimumsalary": null,
+            "minimumsalarytype": null
+        }]
+    }]
+}

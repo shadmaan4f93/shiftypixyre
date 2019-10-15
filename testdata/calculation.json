@@ -1,0 +1,37 @@
+{
+    "hour_match":{
+        "shifter_available_hour": [8, 9, 10, 11, 12],
+        "vacated_shifter_hour": [10, 11, 12, 13, 14],
+        "expected": 0.01375
+    },
+    "distance": {
+        "distance": 55,
+        "expected": 0.055
+    },
+    "pay_match": {
+        "shifter_pref_pay": 60,
+        "vacated_shift_pay": 70,
+        "pay_type": "Hourly",
+        "expected": 0.135
+    },
+    "profile_score": {
+        "shifter_score": 4,
+        "expected": 0.048
+    },
+    "flexibility": {
+        "times_invited": 4,
+        "times_accepted": 3,
+        "expected": 0.14250
+    },
+    "reliability": {
+        "shifetr_no_show": 1,
+        "expected": 0.1273
+    },
+    "convenience": {
+        "shifter_branch": "hdkjasd98782476784",
+        "Vacated_shift_branch": "hdkjasd98782476784",
+        "shifter_shift_hour": [9, 10, 11, 12],
+        "vacated_shift_hours": [13, 14, 15, 16],
+        "expected": 0.19
+    }
+}

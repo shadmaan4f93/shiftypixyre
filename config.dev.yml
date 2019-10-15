@@ -1,0 +1,10 @@
+---
+ENVIRONMENT_TYPE: dev
+ROLE: # Write your arn for example (arn:aws:iam::247893468:role/arnname)
+VPC:
+  securityGroupIds:
+    - sg-0a49669a7d2ce2c1b
+  subnetIds:
+    - subnet-0857d9e037366eb2c
+    - subnet-0d7f79034b18ead1a
+    - subnet-005150c5a4d43240b

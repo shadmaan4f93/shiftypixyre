@@ -1,0 +1,94 @@
+{
+    "disquaifyparams": {
+        "static_data_filter": {
+            "vacated_shifter": true,
+            "qualify_distance": 100,
+            "jp_id_filter": true
+        },
+        "volatile_data_filter": {
+            "shift_overlap": true,
+            "day_overtime_risk": {
+                "day_overtime_range": 8
+            },
+            "week_overtime_risk": {
+                "week_overtime_range": 40
+            },
+            "duration_difference": {
+                "duration_difference_range": 1
+            },
+            "flexibility_filter": {
+                "invited_range": 5,
+                "accepted_range": 0
+            },
+            "reliability_filter": {
+                "noshow_range": 3
+            },
+            "recommended_filter": {
+                "recommended_range": 5,
+                "invited_range": 0
+            },
+            "position_filter": {
+                "completed_position_range": 0
+        }
+    }
+    },
+    "vacated_params": {
+        "shiftId": "11e8ab54046b0af5bb3b0242ac110002",
+        "positionId": "11e804c554c2c8c0af0c02ded88531ee",
+        "jobProviderId": "11e839799bb5fd6ba61e0242ac110002",
+        "jobLocationId": "11e787d57249c05a957a02ded88531ee",
+        "rate": 10,
+        "vacatedShifterId": "11e7cdd1850e695586cc02ded88531ee",
+        "startTime": "2019-02-16T10:30:00",
+        "endTime": "2019-02-16T11:30:00",
+        "location": [
+            -118.40036,
+            34.07362
+        ]
+    },
+    "shiftid": "11e8ab54046b0af5bb3b0242ac110002",
+    "shifterid": "11e77824f2bb35a2aa230242ac110003",
+    "shifters": [
+        {
+        "shifterid" : "11e7873ddea55f59bccd0242ac110003",
+        "existingshifterjpid" : "",
+        "rating" : 5,
+        "location" : [
+                -111.7917716,
+                33.2351666
+        ],
+        "shifteravailability" : [
+                {
+                        "day" : 4,
+                        "starttime" : "00:44:00",
+                        "endtime" : "00:44:00",
+                        "minimumsalary" : 5
+                },
+                {
+                        "day" : 5,
+                        "starttime" : "00:44:00",
+                        "endtime" : "00:44:00",
+                        "minimumsalary" : 5
+                },
+                {
+                        "day" : 2,
+                        "starttime" : "00:44:00",
+                        "endtime" : "00:44:00",
+                        "minimumsalary" : 5
+                },
+                {
+                        "day" : 1,
+                        "starttime" : "00:44:00",
+                        "endtime" : "00:44:00",
+                        "minimumsalary" : 5
+                },
+                {
+                        "day" : 3,
+                        "starttime" : "00:44:00",
+                        "endtime" : "00:44:00",
+                        "minimumsalary" : 5
+                }
+        ]
+      }
+    ]
+}

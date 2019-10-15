@@ -1,0 +1,103 @@
+{
+    "dal_url": "http://dal.dev.shiftpixy.com/api/re",
+    "shifter_api_params": {
+        "Type": "shifter",
+        "ID": "11e77824f2bb35a2aa230242ac110003"
+    },
+    "disqualify":{
+        "shift_overlap":{
+            "input":{
+                "vacated_params": {
+                    "starttime": "2019-01-14 13:01:00",
+                    "endtime": "2019-01-14 18:01:00"
+                },
+                "shifter": {
+                    "confirmedshifthours": [
+                        {
+                            "starttime": "2019-01-14 19:01:00",
+                            "endtime": "2019-01-14 23:01:00"
+                        }
+                    ]
+                }
+            },
+            "expected": false
+        },
+        "day_overtime_risk":{
+            "input":{
+                "vacated_params": {
+                    "starttime": "2019-01-14 15:01:00",
+                    "endtime": "2019-01-14 18:01:00"
+                },
+                "shifter": {
+                    "confirmedshifthours": [
+                        {
+                            "starttime": "2019-01-14 19:01:00",
+                            "endtime": "2019-01-14 23:01:00"
+                        }
+                    ]
+                }
+            },
+            "expected": false
+        },
+        "flexibility_filter":{
+            "input":{
+                "shifter": {
+                    "invitednoaccepted": [
+                        {
+                          "jpinvited": 1,
+                          "acceptedstate": 1
+                        },
+                        {
+                          "jpinvited": 1,
+                          "acceptedstate": 1
+                        },
+                        {
+                          "jpinvited": 1,
+                          "acceptedstate": 0
+                        },
+                        {
+                          "jpinvited": 1,
+                          "acceptedstate": 1
+                        }
+                      ]
+                }
+            },
+            "expected": false
+        },
+        "reliability_filter":{
+            "input":{
+                "shifter":{
+                    "noshows": [
+                        {
+                        "vacatedreason": "No Show"
+                        },
+                        {
+                            "vacatedreason": "No Show"
+                        },
+                        {
+                            "vacatedreason": "other"
+                        }
+                    ]
+                }
+            },
+            "expected": false
+        }
+    },
+    "vacated_params":{
+        "shiftid": "11e8414f61ba6036b7070242ac110002",
+        "vacatedshifterid": "11e77824f2bb35a2aa230242ac110005",
+        "jobprovider": "",
+        "payrate": "",
+        "starttime": "",
+        "endtime": "",
+        "position": "manager",
+        "branchlocation": [-118.31036, 34.07362]
+    },
+    "cordinates": {
+        "longitude":77.308601,
+        "latitude":28.653229
+    },
+    "address": "222, Anand Vihar, Delhi, 110092, India",
+    "start_time": "2018-01-09T23:30:00+00:00",
+    "end_time": "2018-01-10T23:30:00+00:00"
+}

@@ -1,0 +1,48 @@
+{
+    "sqs_body": {
+        "Id": "11e8fe12d5b546b7a6e10242ac110003",
+        "nType": "shifter",
+        "timestamp": "2018-12-18T14:16:54.109053831Z"
+    },
+    "shifter_data": {
+        "id": "11e77824f2bb35a2aa230242ac1101d1",
+        "existingshifterjpid": "11e77824f2bb35a2aa230242ac110jp1",
+        "position": [],
+        "latitude": "28.608720",
+        "longitude": "77.348900",
+        "rating": 4,
+        "shifteravailability": [ {
+            "day" : 0,
+            "starttime" : "2018-08-30 02:30:00",
+            "endtime" : "2018-08-30 07:30:00",
+            "minimumsalary" : 20
+        },
+        {
+            "day" : 1,
+            "starttime" : "2018-08-30 02:30:00",
+            "endtime" : "2018-08-30 07:30:00",
+            "minimumsalary" : 20
+        },
+        {
+            "day" : 2,
+            "starttime" : "2018-08-30 02:30:00",
+            "endtime" : "2018-08-30 07:30:00",
+            "minimumsalary" : 15
+        }]
+    },
+    "shift_data": {
+        "shiftid": "11e934503b524ec8ae2a0242ac110002",
+        "jobproviderid": "11e792557ca3145a9eb40242ac110002",
+        "longitude": "-118.1884994506836",
+        "latitude": "33.77750015258789",
+        "shiftdetail": [
+            {
+                "shifterid": null,
+                "rate": 0,
+                "starttime": null,
+                "endtime": null,
+                "shiftpositionid": null
+            }
+        ]
+    }
+}

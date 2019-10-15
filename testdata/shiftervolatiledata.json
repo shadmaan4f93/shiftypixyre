@@ -1,0 +1,251 @@
+{
+    "status": 200,
+    "message": "Success",
+    "data": [
+      {
+        "shifterid": "11e77824f2bb35a2aa230242ac110003",
+        "confirmedshifthours": [
+          {
+            "starttime": "2019-01-14 15:01:00",
+            "endtime": "2019-01-14 17:01:00"
+          }
+        ],
+        "vacatedshiftposition": [
+          {
+            "positionid": "11e813402c180e1290190242ac110003"
+          }
+        ],
+        "invitedcount": 3,
+        "acceptedcount": 2,
+        "noshowcount": 1,
+        "recommendedcount": 4
+      },
+      {
+        "shifterid": "11e7785d817c7d0eaa230242ac110003",
+        "confirmedshifthours": [
+          {
+            "starttime": "2019-01-14 15:01:00",
+            "endtime": "2019-01-14 18:33:00"
+          },
+          {
+            "starttime": "2019-01-15 09:30:00",
+            "endtime": "2019-01-15 18:31:00"
+          }
+        ],
+        "vacatedshiftposition": [
+          {
+            "positionid": "11e813402c180e1290190242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          }
+        ],
+        "invitedcount": 7,
+        "acceptedcount": 9,
+        "noshowcount": 1,
+        "recommendedcount": 3
+      },
+      {
+        "shifterid": "11e77824f2bb35a2aa230242ac110005",
+        "confirmedshifthours": [
+          {
+            "starttime": "2019-01-14 15:01:00",
+            "endtime": "2019-01-14 15:01:00"
+          }
+        ],
+        "vacatedshiftposition": [
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          }
+        ],
+        "invitedcount": 3,
+        "acceptedcount": 2,
+        "noshowcount": 1,
+        "recommendedcount": 3
+      },
+      {
+        "shifterid": "11e779676d48b839aa230242ac110003",
+        "confirmedshifthours": [
+          {
+            "starttime": "2019-01-14 15:01:00",
+            "endtime": "2019-01-14 18:33:00"
+          },
+          {
+            "starttime": "2019-01-15 09:30:00",
+            "endtime": "2019-01-15 18:31:00"
+          }
+        ],
+        "vacatedshiftposition": [
+          {
+            "positionid": "11e813402c180e1290190242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          }
+        ],
+        "invitedcount": 7,
+        "acceptedcount": 9,
+        "noshowcount": 1,
+        "recommendedcount": 4
+      },
+      {
+        "shifterid": "11e78393e9c944aaaa230242ac110003",
+        "confirmedshifthours": [
+          {
+            "starttime": "2019-01-14 15:01:00",
+            "endtime": "2019-01-14 15:01:00"
+          }
+        ],
+        "vacatedshiftposition": [
+          {
+            "positionid": "11e813402c180e1290190242ac110003"
+          }
+        ],
+        "invitedcount": 3,
+        "acceptedcount": 2,
+        "noshowcount": 1,
+        "recommendedcount": 3
+      },
+      {
+        "shifterid": "11e7873217f7427ead340242ac110002",
+        "confirmedshifthours": [
+          {
+            "starttime": "2019-01-14 15:01:00",
+            "endtime": "2019-01-14 18:33:00"
+          },
+          {
+            "starttime": "2019-01-15 09:30:00",
+            "endtime": "2019-01-15 18:31:00"
+          }
+        ],
+        "vacatedshiftposition": [
+          {
+            "positionid": "11e813402c180e1290190242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          }
+        ],
+        "invitedcount": 7,
+        "acceptedcount": 9,
+        "noshowcount": 1,
+        "recommendedcount": 3
+      },
+      {
+        "shifterid": "11e8fe12d5b546b7a6e10242ac110003",
+        "confirmedshifthours": [
+          {
+            "starttime": "2019-01-14 15:01:00",
+            "endtime": "2019-01-14 15:01:00"
+          }
+        ],
+        "vacatedshiftposition": [
+          {
+            "positionid": "11e813402c180e1290190242ac110003"
+          }
+        ],
+        "invitedcount": 3,
+        "acceptedcount": 2,
+        "noshowcount": 1,
+        "recommendedcount": 3
+      },
+      {
+        "shifterid": "11e8fe12d5b546b7a6e10242ac110003",
+        "confirmedshifthours": [
+          {
+            "starttime": "2019-01-14 15:01:00",
+            "endtime": "2019-01-14 18:33:00"
+          },
+          {
+            "starttime": "2019-01-15 09:30:00",
+            "endtime": "2019-01-15 18:31:00"
+          }
+        ],
+        "vacatedshiftposition": [
+          {
+            "positionid": "11e813402c180e1290190242ac110003"
+          },
+          {
+            "positionid": "11e813402c180e1290190242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          }
+        ],
+        "invitedcount": 7,
+        "acceptedcount": 9,
+        "noshowcount": 1,
+        "recommendedcount": 3
+      },
+      {
+        "shifterid": "11e8fe12d5b546b7a6e10242ac110003",
+        "confirmedshifthours": [
+          {
+            "starttime": "2019-01-14 15:01:00",
+            "endtime": "2019-01-14 15:01:00"
+          }
+        ],
+        "vacatedshiftposition": [
+          {
+            "positionid": "11e813402c180e1290190242ac110003"
+          }
+        ],
+        "invitedcount": 3,
+        "acceptedcount": 2,
+        "noshowcount": 1,
+        "recommendedcount": 3
+      },
+      {
+        "shifterid": "11e8fe12d5b546b7a6e10242ac110003",
+        "confirmedshifthours": [
+          {
+            "starttime": "2019-01-14 15:01:00",
+            "endtime": "2019-01-14 18:33:00"
+          },
+          {
+            "starttime": "2019-01-15 09:30:00",
+            "endtime": "2019-01-15 18:31:00"
+          }
+        ],
+        "vacatedshiftposition": [
+          {
+            "positionid": "11e813402c180e1290190242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          },
+          {
+            "positionid": "11e8feb59335a0c1a6e10242ac110003"
+          }
+        ],
+        "invitedcount": 7,
+        "acceptedcount": 9,
+        "noshowcount": 1,
+        "recommendedcount": 3
+      }
+    ]
+}
